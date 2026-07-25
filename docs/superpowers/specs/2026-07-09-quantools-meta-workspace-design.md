@@ -1,5 +1,10 @@
 # quantools Meta Workspace Design
 
+> **Status update (2026-07-25):** The initial ignored independent-checkout
+> policy has been superseded by
+> `2026-07-25-reproducible-externals-design.md`. Third-party repositories are
+> now pinned as Git submodules.
+
 Date: 2026-07-09
 
 ## Goal
