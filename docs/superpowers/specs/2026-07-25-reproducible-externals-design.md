@@ -6,6 +6,9 @@ Approved on 2026-07-25. This design supersedes the initial bootstrap decision
 in `2026-07-09-quantools-meta-workspace-design.md` to keep `externals/` as
 ignored independent checkouts.
 
+The later `2026-07-25-paper2quant-independent-repository-design.md` supersedes
+this document's decision to track Paper2Quant as ordinary root-repository files.
+
 ## Problem
 
 Ignoring all of `externals/` keeps the root repository small, but it also hides
@@ -41,15 +44,19 @@ The workspace has three ownership classes:
 
 1. **First-party workspace code**
    - Tracked normally by the `quantools` repository.
-   - Includes documentation and `packages/paper2quant`.
+   - Includes workspace documentation and metadata.
 
-2. **Pinned third-party source**
+2. **Pinned first-party components**
+   - Tracked as Git submodules below `packages/`.
+   - Paper2Quant is the first component in this class.
+
+3. **Pinned third-party source**
    - Tracked as Git submodules below `externals/`.
    - The root repository records the upstream URL and exact commit.
    - Local edits inside a submodule remain visible as a dirty submodule and are
      never silently folded into the root repository.
 
-3. **Independent sibling systems**
+4. **Independent sibling systems**
    - `D:\qmtq` remains a separate repository and safety boundary.
    - Integration uses documented paths and adapter contracts.
 
@@ -114,14 +121,15 @@ then the path is replaced by a real checkout of that upstream revision.
 
 `externals/research-intake/paper2quant` has no upstream Git metadata and is
 first-party integration code for qmtq research-source protocols. It moves to
-`packages/paper2quant` and is tracked normally, including its tests.
+`packages/paper2quant` for the first migration. The later independent-repository
+design extracts it to `gyfin/Paper2Quant` and keeps the same workspace path as a
+first-party submodule.
 
 ## Ignore Policy
 
 The root rule `/externals/` is removed. The root ignore file covers only local
-workspace machinery and migration backups. Package-specific Python caches remain
-ignored by `packages/paper2quant/.gitignore`. Each submodule applies its own
-upstream ignore policy internally.
+workspace machinery and migration backups. Each first-party or third-party
+submodule applies its own repository ignore policy internally.
 
 This makes an unexpected new directory under `externals/` visible to
 `git status` instead of silently hiding it.

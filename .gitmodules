@@ -34,3 +34,6 @@
 [submodule "externals/oskhquant"]
 	path = externals/oskhquant
 	url = https://github.com/khscience/OSkhQuant.git
+[submodule "packages/paper2quant"]
+	path = packages/paper2quant
+	url = ../Paper2Quant.git

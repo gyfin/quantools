@@ -65,7 +65,8 @@ decision. Do not leave unpublished edits inside a detached submodule checkout.
 - Paper2Agent, paper2code, RD-Agent, and cangjie-skill are research-intake
   experiments.
 - kimi-cli and kimi-code are optional agent hosts, not trading authorities.
-- First-party `paper2quant` lives at `packages/paper2quant`.
+- First-party `paper2quant` lives at `packages/paper2quant` as a pinned
+  submodule of `gyfin/Paper2Quant`; it is not a third-party external.
 - `D:\qmtq` remains an independent sibling repository and the QMT protocol,
   evidence, and safety boundary.
 
