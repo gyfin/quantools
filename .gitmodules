@@ -1,0 +1,36 @@
+[submodule "externals/qlib"]
+	path = externals/qlib
+	url = https://github.com/microsoft/qlib.git
+[submodule "externals/vectorbt"]
+	path = externals/vectorbt
+	url = https://github.com/polakowo/vectorbt.git
+[submodule "externals/lean"]
+	path = externals/lean
+	url = https://github.com/QuantConnect/Lean.git
+[submodule "externals/Kronos"]
+	path = externals/Kronos
+	url = https://github.com/shiyu-coder/Kronos.git
+[submodule "externals/QuantsPlaybook"]
+	path = externals/QuantsPlaybook
+	url = https://github.com/hugo2046/QuantsPlaybook.git
+[submodule "externals/agent-hosts/kimi-cli"]
+	path = externals/agent-hosts/kimi-cli
+	url = https://github.com/MoonshotAI/kimi-cli.git
+[submodule "externals/agent-hosts/kimi-code"]
+	path = externals/agent-hosts/kimi-code
+	url = https://github.com/MoonshotAI/kimi-code.git
+[submodule "externals/research-intake/cangjie-skill"]
+	path = externals/research-intake/cangjie-skill
+	url = https://github.com/kangarooking/cangjie-skill.git
+[submodule "externals/research-intake/paper2agent"]
+	path = externals/research-intake/paper2agent
+	url = https://github.com/jmiao24/Paper2Agent.git
+[submodule "externals/research-intake/paper2code"]
+	path = externals/research-intake/paper2code
+	url = https://github.com/going-doer/paper2code.git
+[submodule "externals/research-intake/rd-agent"]
+	path = externals/research-intake/rd-agent
+	url = https://github.com/microsoft/RD-Agent.git
+[submodule "externals/oskhquant"]
+	path = externals/oskhquant
+	url = https://github.com/khscience/OSkhQuant.git

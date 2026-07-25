@@ -1,0 +1,93 @@
+schema_version: 1
+
+policy:
+  revision_source: root_gitlink
+  url_source: .gitmodules
+  update_mode: reviewed_single_dependency
+  default_trust: untrusted_third_party
+  live_qmt_access: forbidden
+
+components:
+  - id: qlib
+    path: externals/qlib
+    upstream: https://github.com/microsoft/qlib.git
+    category: research
+    role: factor_research_and_ml
+    trust_class: third_party_research
+
+  - id: vectorbt
+    path: externals/vectorbt
+    upstream: https://github.com/polakowo/vectorbt.git
+    category: research
+    role: vectorized_parameter_experiments
+    trust_class: third_party_research
+
+  - id: lean
+    path: externals/lean
+    upstream: https://github.com/QuantConnect/Lean.git
+    category: execution
+    role: order_portfolio_and_simulation_engine
+    trust_class: third_party_execution
+
+  - id: kronos
+    path: externals/Kronos
+    upstream: https://github.com/shiyu-coder/Kronos.git
+    category: research
+    role: financial_time_series_foundation_model
+    trust_class: third_party_research
+
+  - id: quants_playbook
+    path: externals/QuantsPlaybook
+    upstream: https://github.com/hugo2046/QuantsPlaybook.git
+    category: research
+    role: factor_and_strategy_reference_collection
+    trust_class: third_party_research
+
+  - id: oskhquant
+    path: externals/oskhquant
+    upstream: https://github.com/khscience/OSkhQuant.git
+    category: a_share_integration
+    role: mini_qmt_reference_implementation
+    trust_class: third_party_execution
+
+  - id: kimi_cli
+    path: externals/agent-hosts/kimi-cli
+    upstream: https://github.com/MoonshotAI/kimi-cli.git
+    category: agent_host
+    role: optional_cli_agent_runtime
+    trust_class: third_party_agent_host
+
+  - id: kimi_code
+    path: externals/agent-hosts/kimi-code
+    upstream: https://github.com/MoonshotAI/kimi-code.git
+    category: agent_host
+    role: optional_coding_agent_runtime
+    trust_class: third_party_agent_host
+
+  - id: cangjie_skill
+    path: externals/research-intake/cangjie-skill
+    upstream: https://github.com/kangarooking/cangjie-skill.git
+    category: research_intake
+    role: cangjie_research_skill_reference
+    trust_class: third_party_research_intake
+
+  - id: paper2agent
+    path: externals/research-intake/paper2agent
+    upstream: https://github.com/jmiao24/Paper2Agent.git
+    category: research_intake
+    role: paper_to_agent_reference
+    trust_class: third_party_research_intake
+
+  - id: paper2code
+    path: externals/research-intake/paper2code
+    upstream: https://github.com/going-doer/paper2code.git
+    category: research_intake
+    role: paper_to_code_reference
+    trust_class: third_party_research_intake
+
+  - id: rd_agent
+    path: externals/research-intake/rd-agent
+    upstream: https://github.com/microsoft/RD-Agent.git
+    category: research_intake
+    role: automated_research_and_development_reference
+    trust_class: third_party_research_intake
