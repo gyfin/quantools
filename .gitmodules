@@ -37,3 +37,12 @@
 [submodule "packages/paper2quant"]
 	path = packages/paper2quant
 	url = ../Paper2Quant.git
+[submodule "externals/agent-hosts/open-science"]
+	path = externals/agent-hosts/open-science
+	url = https://github.com/aipoch/open-science.git
+[submodule "externals/research-methods/best-serenity-skill"]
+	path = externals/research-methods/best-serenity-skill
+	url = https://github.com/yux1azhengye/BestSerenitySkillFromAT.git
+[submodule "externals/research-methods/serenity-bottleneck-hunter"]
+	path = externals/research-methods/serenity-bottleneck-hunter
+	url = https://github.com/Mrjie7205/serenity-bottleneck-hunter.git

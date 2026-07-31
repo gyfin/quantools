@@ -12,6 +12,24 @@ Every source project below this directory is a Git submodule. The root
 `externals/manifest.yaml` adds role and trust metadata. Gitlinks remain the
 authoritative revision pins.
 
+## Open Source Intake
+
+The workspace keeps a stable core while allowing new open-source capabilities
+to enter through a controlled lifecycle:
+
+```text
+discover -> register -> pin -> incubate -> evaluate -> approve -> update/retire
+```
+
+- Source code stays under a stable capability-oriented path.
+- `manifest.yaml` records lifecycle and integration boundaries.
+- `incubator/` stores intake rules and evaluation records, not mutable copies.
+- New candidate projects are explicitly registered as `incubating` and
+  `reference_only`.
+- Promotion requires license review, reproducible evaluation, an owned adapter,
+  and human approval.
+- Upstream updates are tested independently before the root gitlink changes.
+
 ## Initialize
 
 For a new clone:
@@ -64,7 +82,10 @@ decision. Do not leave unpublished edits inside a detached submodule checkout.
 - LEAN and OSkhQuant provide execution or A-share integration reference code.
 - Paper2Agent, paper2code, RD-Agent, and cangjie-skill are research-intake
   experiments.
-- kimi-cli and kimi-code are optional agent hosts, not trading authorities.
+- BestSerenitySkillFromAT and serenity-bottleneck-hunter are incubating
+  supply-chain research-method references, not signal providers.
+- kimi-cli, kimi-code, and Open Science are optional agent hosts or research
+  workbenches, not trading authorities.
 - First-party `paper2quant` lives at `packages/paper2quant` as a pinned
   submodule of `gyfin/Paper2Quant`; it is not a third-party external.
 - `D:\qmtq` remains an independent sibling repository and the QMT protocol,

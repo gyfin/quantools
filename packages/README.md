@@ -8,7 +8,9 @@ and lifecycle but are pinned by the quantools workspace.
 - Path: `packages/paper2quant`
 - Repository: `git@github.com:gyfin/Paper2Quant.git`
 - Root submodule URL: `../Paper2Quant.git`
-- Purpose: offline research-source staging and unevaluated method catalogs
+- Purpose: offline, evidence-traceable PDF intake that produces qmtq v2
+  candidate bundles and separate validation requests; legacy staging and
+  unevaluated method catalogs remain available for compatibility
 
 The quantools gitlink selects the reviewed Paper2Quant revision. Make and push
 Paper2Quant changes inside its repository first, then review and commit the

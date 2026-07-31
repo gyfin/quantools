@@ -5,6 +5,9 @@ policy:
   url_source: .gitmodules
   update_mode: reviewed_single_dependency
   default_trust: untrusted_third_party
+  default_lifecycle: pinned_reference
+  promotion_mode: reproducible_evaluation_and_human_review
+  upstream_update_mode: sandbox_then_review
   live_qmt_access: forbidden
 
 components:
@@ -64,6 +67,13 @@ components:
     role: optional_coding_agent_runtime
     trust_class: third_party_agent_host
 
+  - id: open_science
+    path: externals/agent-hosts/open-science
+    upstream: https://github.com/aipoch/open-science.git
+    category: agent_host
+    role: optional_local_research_workbench
+    trust_class: third_party_agent_host
+
   - id: cangjie_skill
     path: externals/research-intake/cangjie-skill
     upstream: https://github.com/kangarooking/cangjie-skill.git
@@ -91,3 +101,25 @@ components:
     category: research_intake
     role: automated_research_and_development_reference
     trust_class: third_party_research_intake
+
+  - id: best_serenity_skill
+    path: externals/research-methods/best-serenity-skill
+    upstream: https://github.com/yux1azhengye/BestSerenitySkillFromAT.git
+    category: research_method
+    role: unified_supply_chain_bottleneck_method_reference
+    trust_class: untrusted_third_party_research_method
+    lifecycle: incubating
+    integration_mode: reference_only
+    license_spdx: MIT
+    license_review: repository_license_verified_transitive_content_pending
+
+  - id: serenity_bottleneck_hunter
+    path: externals/research-methods/serenity-bottleneck-hunter
+    upstream: https://github.com/Mrjie7205/serenity-bottleneck-hunter.git
+    category: research_method
+    role: focused_supply_chain_bottleneck_method_reference
+    trust_class: untrusted_third_party_research_method
+    lifecycle: incubating
+    integration_mode: reference_only
+    license_spdx: MIT
+    license_review: repository_license_verified_transitive_content_pending
