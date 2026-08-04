@@ -123,3 +123,39 @@ components:
     integration_mode: reference_only
     license_spdx: MIT
     license_review: repository_license_verified_transitive_content_pending
+
+  - id: qilihei_stockagent
+    path: externals/a-share-research/qilihei-stockagent
+    upstream: https://github.com/qilihei/StockAgent.git
+    category: a_share_research
+    role: a_share_data_news_factor_backtest_and_agent_platform_reference
+    trust_class: untrusted_third_party_financial_agent
+    lifecycle: incubating
+    integration_mode: reference_only
+    approval_status: pending_review
+    license_spdx: MIT
+    license_review: repository_license_verified_transitive_content_and_service_terms_pending
+
+  - id: mingyu_stockagent
+    path: externals/simulation-engines/mingyu-stockagent
+    upstream: https://github.com/MingyuJ666/Stockagent.git
+    category: simulation_engine
+    role: llm_investor_behavior_and_market_simulation_reference
+    trust_class: untrusted_third_party_financial_agent
+    lifecycle: incubating
+    integration_mode: reference_only
+    approval_status: pending_review
+    license_spdx: NOASSERTION
+    license_review: repository_license_missing_code_use_and_extraction_blocked
+
+  - id: valuecell
+    path: externals/agent-platforms/valuecell
+    upstream: https://github.com/ValueCell-ai/valuecell.git
+    category: agent_platform
+    role: financial_agent_orchestration_registry_a2a_and_application_reference
+    trust_class: untrusted_third_party_financial_agent
+    lifecycle: incubating
+    integration_mode: reference_only
+    approval_status: pending_review
+    license_spdx: Apache-2.0
+    license_review: repository_license_verified_third_party_components_and_service_terms_pending
