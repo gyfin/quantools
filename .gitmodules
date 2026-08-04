@@ -49,3 +49,6 @@
 [submodule "externals/a-share-research/qilihei-stockagent"]
 	path = externals/a-share-research/qilihei-stockagent
 	url = https://github.com/qilihei/StockAgent.git
+[submodule "externals/simulation-engines/mingyu-stockagent"]
+	path = externals/simulation-engines/mingyu-stockagent
+	url = https://github.com/MingyuJ666/Stockagent.git
