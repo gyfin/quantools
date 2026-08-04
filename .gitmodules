@@ -46,3 +46,6 @@
 [submodule "externals/research-methods/serenity-bottleneck-hunter"]
 	path = externals/research-methods/serenity-bottleneck-hunter
 	url = https://github.com/Mrjie7205/serenity-bottleneck-hunter.git
+[submodule "externals/a-share-research/qilihei-stockagent"]
+	path = externals/a-share-research/qilihei-stockagent
+	url = https://github.com/qilihei/StockAgent.git
