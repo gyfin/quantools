@@ -52,3 +52,6 @@
 [submodule "externals/simulation-engines/mingyu-stockagent"]
 	path = externals/simulation-engines/mingyu-stockagent
 	url = https://github.com/MingyuJ666/Stockagent.git
+[submodule "externals/agent-platforms/valuecell"]
+	path = externals/agent-platforms/valuecell
+	url = https://github.com/ValueCell-ai/valuecell.git
