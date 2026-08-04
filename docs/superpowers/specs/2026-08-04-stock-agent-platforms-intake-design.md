@@ -26,6 +26,8 @@ discover -> register -> pin -> inspect -> evaluate -> approve or retire
 
 All three projects enter as `incubating` and `reference_only`. Pinning a
 repository records what was reviewed; it does not make the code trusted.
+The manifest remains an inventory-only v1 registry, so every candidate also
+has `approval_status: pending_review`; none is an approved capability.
 
 The alternatives were rejected for this phase:
 
@@ -56,6 +58,7 @@ duplicates no revision field because `policy.revision_source` is
 - `trust_class: untrusted_third_party_financial_agent`
 - `lifecycle: incubating`
 - `integration_mode: reference_only`
+- `approval_status: pending_review`
 
 License records differ by project:
 

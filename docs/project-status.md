@@ -1,6 +1,6 @@
 # quantools 项目状态台账
 
-更新时间：2026-07-31
+更新时间：2026-08-04
 
 本文记录当前已经落地的成果、已经批准的目标设计，以及仍处于评估阶段的
 候选项目。它是阶段性事实快照，不把设计目标写成已经实现的功能。
@@ -83,6 +83,18 @@ AI-native orchestration
 Open Science 与两个 Serenity 方法库均已固定为 Git submodule。Serenity
 方法处于 `incubating`、`reference_only` 状态，不能直接生成已接受信号。
 
+### 股票研究代理与平台
+
+| 项目 | 当前定位 |
+| --- | --- |
+| qilihei/StockAgent | A 股工作流、数据/新闻、因子、回测和工具模式参考 |
+| MingyuJ666/Stockagent | LLM 投资者行为与市场仿真方法参考；许可证缺失阻断代码使用 |
+| ValueCell | 代理注册、编排、A2A、持久化和应用外壳参考；交易能力排除在外 |
+
+三个项目均已固定为 `incubating`、`reference_only` 和 `pending_review`。
+当前 manifest v1 只是库存清单，不是批准目录。它们没有被安装、启动或连接
+至 qmtq，也没有启用任何凭据或交易路径。
+
 ## 四、Paper2Quant 当前成果
 
 ### 已实现的 0.2 确定性纵向切片
@@ -132,6 +144,8 @@ AI 原生多模型架构已经批准并记录，目标包括：
 - `externals/incubator/` 保存评测规则和候选项目记录；
 - 新项目默认不能访问实盘凭据或绕过 qmtq；
 - Serenity 两个方法库作为首批 `reference_only` 试点。
+- 三个股票研究代理与平台候选已固定版本并记录差异，但仍全部处于
+  `pending_review`，固定版本不等于批准接入。
 
 ## 六、新闻、舆情与情景推演方向
 
@@ -199,6 +213,7 @@ externals/simulation-engines/mirofish
 | qmtq 与三类量化引擎适配器 | 契约已明确，尚未实现 |
 | 开源能力登记与孵化基础治理 | 已完成 |
 | Serenity 方法库固定与初步边界评估 | 已完成，处于孵化状态 |
+| StockAgent 与 ValueCell 受控源码纳入 | 已固定并记录评估，仅供参考、仍待审 |
 | BettaFish / MiroFish 价值与边界评估 | 已完成 |
 | BettaFish / MiroFish 版本固定与集成 | 尚未执行 |
 

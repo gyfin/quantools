@@ -84,6 +84,12 @@ decision. Do not leave unpublished edits inside a detached submodule checkout.
   experiments.
 - BestSerenitySkillFromAT and serenity-bottleneck-hunter are incubating
   supply-chain research-method references, not signal providers.
+- qilihei/StockAgent is an incubating A-share workflow and tool-schema
+  reference; its internal Redis tool protocol is not an approved MCP adapter.
+- MingyuJ666/Stockagent is an incubating market-simulation methodology
+  reference; missing repository licensing blocks code use and extraction.
+- ValueCell is an incubating financial-agent orchestration and A2A reference;
+  its exchange execution and credential paths are outside the trust boundary.
 - kimi-cli, kimi-code, and Open Science are optional agent hosts or research
   workbenches, not trading authorities.
 - First-party `paper2quant` lives at `packages/paper2quant` as a pinned
